@@ -1,7 +1,7 @@
 #!/usr/bin/sh
 #
 # Usage:
-#   ./main.sh <settings_file.conf>
+#   ./update-system-clock.sh <settings_file.conf>
 #
 # Parameters:
 #   $1 - file with global constants definitions. Default is './settings.conf'
