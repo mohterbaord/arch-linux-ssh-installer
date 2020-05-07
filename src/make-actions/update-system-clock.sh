@@ -11,7 +11,7 @@ set -e
 
 source './src/util/import-utils.sh'
 source './src/util/ssh-utils.sh'
-source './src/update-system-clock.sh'
+source './src/util/update-system-clock-utils.sh'
 
 # Loading .conf file:
 source $(get_module $1 './settings.conf')

@@ -18,7 +18,7 @@ function get_module() {
     elif [[ "$module_default" != ./* ]]; then
       module="./$module_default"
     fi
-  elif [[ "$module" != ./* ]]; then
+  elif [[ "$module" != ./* ]] && [[ "$module" != /* ]]; then
     module="./$module"
   fi
 

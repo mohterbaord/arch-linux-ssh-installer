@@ -1,3 +1,9 @@
-install:
-	@chmod +x ./src/main.sh
-	@./src/main.sh
+PROJECT_ROOT=$(shell pwd)
+ACTIONS_DIR="$(PROJECT_ROOT)/src/make-actions"
+SETTINGS_CONF_FILE_PATH="$(PROJECT_ROOT)/settings.conf"
+
+install: update-system-clock
+
+update-system-clock:
+	@chmod +x "$(ACTIONS_DIR)/update-system-clock.sh"
+	@"$(ACTIONS_DIR)/update-system-clock.sh" "$(SETTINGS_CONF_FILE_PATH)"
