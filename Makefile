@@ -1,6 +1,6 @@
 PROJECT_ROOT=$(shell pwd)
 ACTIONS_DIR="$(PROJECT_ROOT)/src/make-actions"
-SETTINGS_CONF_FILE_PATH="$(PROJECT_ROOT)/settings.conf"
+SETTINGS_CONF_FILE_PATH="$(PROJECT_ROOT)/settings.local.conf"
 
 install: update-system-clock
 

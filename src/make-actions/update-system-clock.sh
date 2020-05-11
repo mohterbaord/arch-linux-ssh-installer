@@ -14,7 +14,7 @@ source './src/util/ssh-utils.sh'
 source './src/util/update-system-clock-utils.sh'
 
 # Loading .conf file:
-source $(get_module $1 './settings.conf')
+source $(get_module "$1" './settings.conf' 1)
 
 ssh_rekeygen
 update_system_clock
